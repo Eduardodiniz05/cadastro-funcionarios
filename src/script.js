@@ -57,6 +57,7 @@ function deleteItem (index) {
     itens.splice(index, 1)
     setItensBD()
     loadItens()
+    alert('tem certeza que deseja remover este item? esta ação sera irrevessível')
 }
 
 
