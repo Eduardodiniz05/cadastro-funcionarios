@@ -4,11 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastro</title>
     <link rel="stylesheet" href="/public/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <script src="../src/script.js" defer></script>
 </head>
 <body>
-    <div class="teste">teste</div>
+        <div class="container">
+            <div class="header">
+                <span>Cadastro de Funcionários</span>
+                <button onclick="openModal()" id="new">Adicionar</button>
+            </div>
+            <div class="div-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Função</th>
+                            <th>Salário</th>
+                            <th class="acao">Editar</th>
+                            <th class="acao">Excluir</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-container">
+                <div class="modal">
+                    <form >
+                        <label for="m-nome">Nome</label>
+                        <input type="text" id="m-nome" required />
+
+                        <label for="m-funcao">Função</label>
+                        <input type="text" id="m-funcao" required />
+
+                        <label for="m-salario">Salário</label>
+                        <input type="number" id="m-salario" required />
+                        <button id="btn-save">Add</button>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
 </body>
 </html>
